@@ -1,14 +1,8 @@
 import { Component, ViewChild, ElementRef, OnInit, AfterViewInit } from '@angular/core';
 import * as THREE from 'three';
-// import * as OBJLoader from 'three/examples/js/loaders/OBJLoader';
-// import * as MTLLoader from 'three/examples/js/loaders/MTLLoader';
-// import MTLLoader from 'three-mtl-loader';
- import * as OBJLoader from 'three-obj-loader';
- OBJLoader(THREE);
+import * as OBJLoader from 'three-obj-loader';
+OBJLoader(THREE);
 import * as MTLLoader from 'three-mtl-loader';
-
-// import { OBJLoader } from 'three';
-// import { MTLLoader } from 'three';
 
 @Component({
   selector: 'app-objloader',
@@ -55,12 +49,12 @@ export class ObjLoaderSampleComponent implements OnInit, AfterViewInit  {
 
     result_dice_degree = [
             [0, 0],
-            [0, Math.PI * 90 / 180], // 1
-            [Math.PI * 90 / 180, 0], // 2
-            [Math.PI * 270 / 180, 0], // 3
-            [0, Math.PI * 270 / 180], // 4     0 : 0, 90: 1.57, 180: 3. 14, 270: 4.71, 360: 6.28
-            [Math.PI, 0], // 5
-            [0, 0] // 6
+            [0, Math.PI * 90 / 180], // 2     1.57
+            [Math.PI * 90 / 180, 0], // 1
+            [Math.PI * 270 / 180, 0], // 6     4.71
+            [0, Math.PI * 270 / 180], // 5     0 : 0, 90: 1.57, 180: 3. 14, 270: 4.71, 360: 6.28
+            [Math.PI, 0], // 4
+            [0, 0] // 3
 
         ];
     mod = (Math.PI * 2); // 6.283185307179586

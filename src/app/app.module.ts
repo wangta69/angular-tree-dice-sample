@@ -15,6 +15,6 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent, MeshPhongMaterialSampleComponent, ObjLoaderSampleComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
