@@ -21,7 +21,7 @@
     "@angular/router": "^7.2.2",
     "@types/three": "^0.92.5",
     "core-js": "^2.5.4",
-    "d3": "^5.4.0",
+    "d3": "^7.6.1",
     "rxjs": "~6.5.1",
     "three": "^0.93.0",
     "three-mtl-loader": "^1.0.2",
